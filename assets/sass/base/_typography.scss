@@ -1,0 +1,30 @@
+$text__family--KufiBold:  "NotoKufiArabicBold", Helvetica, Arial, sans-serif !default;
+$text__family--NashkBold:  "NotoNashkBold", Helvetica, Arial, sans-serif !default;
+$text__family--NashkRegular:  "NotoNashkRegular", Helvetica, Arial, sans-serif !default;
+$text__family--nav:  "NotoNaskhArabicBold", Helvetica, Arial, sans-serif !default;
+$text__family--serif:  "NotoSerif", Helvetica, Arial, sans-serif !default;
+
+
+$base__font-size: 15 !default;
+$base__line: 20 !default;
+
+@font-face {
+    font-family: NotoKufiArabicBold;
+    src: url(../../assets/font/NotoKufiArabic-Bold.ttf);
+}
+@font-face {
+    font-family: NotoNaskhArabicBold;
+    src: url(../../assets/font/NotoNaskhArabic-Bold.ttf);
+}
+@font-face {
+    font-family: NotoSerif;
+    src: url(../../assets/font/NotoSerif-Regular.ttf);
+}
+@font-face {
+    font-family: NotoNashkBold;
+    src: url(../../assets/font/NotoNaskhArabic-Regular.ttf);
+}
+@font-face {
+    font-family: NotoNashkRegular;
+    src: url(../../assets/font/NotoNaskhArabic-Regular.ttf);
+}

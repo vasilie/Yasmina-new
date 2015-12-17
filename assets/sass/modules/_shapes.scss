@@ -1,0 +1,28 @@
+.line:before {
+	background: none repeat scroll 0 0 #9e914c;
+	content: "";
+	height: 3px;
+	right: 0;
+	position: absolute;
+	top: 0px;
+	width: 65px;
+}
+.line {
+	position:relative;
+}
+.line--center:before {
+	right: calc(50% - 32.5px);
+	top: 20px;
+}
+.line--center {
+	width:100%;
+	padding:14px 0;
+}
+.line--right:before {
+	right: -86px;
+	top: 24px;
+	
+}
+.line--right, .line--center {
+	@extend .line;
+}

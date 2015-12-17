@@ -5,18 +5,38 @@ html, body {
 	max-width:1350px;
 	width:100%;
 	margin:0 auto;
+	overflow: hidden;
+}
+.section__wrapper {
+	width:100%;
+	padding:0 12%;
+	overflow:hidden;
 }
 .section__left, .section__right {
-	float:left;
 	border:1px solid indianred; // just for testing
 }
 .section__left {
 	width:47%;
+	float:left;
+	background: lightgray;
+}
+.section__right {
+	width:53%;
+	float:right;
 }
 .section__left--padding {
 	@extend .section__left;
-	padding-right: calc-perc(60px, 1350px);
+	padding-right: calc-perc(120px, 1350px);
 }
-.section__right {
-	width:52%;
+
+/*=============================*\
+	Media queries
+\*=============================*/
+
+@media screen and (max-width: 1024px) {
+	.section__left, .section__right, .page-wrapper, .section__wrapper {
+		width: 100%;
+		float: left;
+		padding:0;
+	}
 }

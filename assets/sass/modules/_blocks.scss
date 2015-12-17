@@ -1,0 +1,102 @@
+.block {
+	width:100%;
+	color:cyan;
+	border:1px solid wheat;
+} // just for testing
+.media {
+	width:100%;
+	border-bottom:1px solid $border__color--lightGray;
+	overflow: hidden;
+	direction: rtl;
+	margin: 20px 0;
+	padding-bottom: 20px;
+	margin-top: 0;
+}
+.media--last {
+	border-bottom:none;
+}
+.media__img {
+	width:100%;
+	float: right;
+	img {
+		width: 100%;
+		float: right;
+	}
+}
+.media__content{
+	width:100%;
+	float: right;
+}
+/* ============== *\
+  	Media Vertical
+\* ============== */
+
+.media--large {
+	.media__content{
+		padding-right:15%;
+	}
+}
+.media--medium {
+	text-align:center;
+}
+.media--tiny {
+	width:33.33%;
+	text-align:center;
+	float:right;
+}
+
+/* ============== *\
+  	Media Horizontal
+\* ============== */
+
+.media--large.media__horizontal {
+	.media__img{
+		width:50%;
+	}
+	.media__content{
+		width:50%;
+		padding-right: 4%;
+	}
+}
+.media--medium.media__horizontal {
+	.media__img{
+		width:35%;
+	}
+	.media__content{
+		width:65%;
+		padding-right: 4%;
+		text-align: right;
+	}
+}
+.add {
+	width:100%;
+	padding:5%;
+	background: #333;
+	img {
+		width: 100%;
+	}
+}
+.fullWidth__baner {
+	width:100%;
+	float:left;
+	img {
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.category {
+	padding: 15px 0;
+	color:$text__color--gold;
+}

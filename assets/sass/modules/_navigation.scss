@@ -1,8 +1,14 @@
+.search {
+	width:calc-perc(200px, 1350px);
+	height:100%;
+	float:left;
+}
 .nav {
-	width:100%;
+	width:calc-perc(950px, 1350px);
+	margin-right:calc-perc(200px, 1350px);
 	list-style-type: square;
 	text-align: center;
-    float: left;
+   float: left;
 }
 .nav__item {
 	display: inline-block;

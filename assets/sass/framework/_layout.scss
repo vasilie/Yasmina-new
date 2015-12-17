@@ -1,0 +1,22 @@
+html, body {
+	width:100%
+}
+.page-wrapper {
+	max-width:1350px;
+	width:100%;
+	margin:0 auto;
+}
+.section__left, .section__right {
+	float:left;
+	border:1px solid indianred; // just for testing
+}
+.section__left {
+	width:47%;
+}
+.section__left--padding {
+	@extend .section__left;
+	padding-right: calc-perc(60px, 1350px);
+}
+.section__right {
+	width:52%;
+}

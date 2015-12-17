@@ -1,0 +1,25 @@
+.header {
+	width:100%;
+}
+.banner {
+	width:100%;
+	float:left;
+	img {
+		float: left;
+    width: 100%;	
+	}
+}
+.logo__wrapper{
+	border-bottom: 1px solid $border__color--lightGray;
+	width:100%;
+	float:left;
+}
+.logo {
+	float: left;
+	width:100%;
+	text-align:center;
+	img {
+		position: relative;
+		top: 7px;
+	}
+}

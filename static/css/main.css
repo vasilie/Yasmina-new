@@ -46,9 +46,6 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
-  font-size: 15px; }
-
 @font-face {
   font-family: NotoKufiArabicBold;
   src: url(../../assets/font/NotoKufiArabic-Bold.ttf); }
@@ -64,8 +61,58 @@ html {
 @font-face {
   font-family: NotoNashkRegular;
   src: url(../../assets/font/NotoNaskhArabic-Regular.ttf); }
-.nav {
+html, body {
+  width: 100%; }
+
+.page-wrapper {
+  max-width: 1350px;
   width: 100%;
+  margin: 0 auto; }
+
+.section__left, .section__left--padding, .section__right {
+  float: left;
+  border: 1px solid indianred; }
+
+.section__left, .section__left--padding {
+  width: 47%; }
+
+.section__left--padding {
+  padding-right: 4.44444%; }
+
+.section__right {
+  width: 52%; }
+
+.header {
+  width: 100%; }
+
+.banner {
+  width: 100%;
+  float: left; }
+  .banner img {
+    float: left;
+    width: 100%; }
+
+.logo__wrapper {
+  border-bottom: 1px solid #e9e9e9;
+  width: 100%;
+  float: left; }
+
+.logo {
+  float: left;
+  width: 100%;
+  text-align: center; }
+  .logo img {
+    position: relative;
+    top: 7px; }
+
+.search {
+  width: 14.81481%;
+  height: 100%;
+  float: left; }
+
+.nav {
+  width: 70.37037%;
+  margin-right: 14.81481%;
   list-style-type: square;
   text-align: center;
   float: left; }

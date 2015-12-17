@@ -72,7 +72,7 @@ html, body {
 
 .section__wrapper {
   width: 100%;
-  padding: 0 12%;
+  padding: 0 9.62963%;
   overflow: hidden; }
 
 .section__left, .section__left--padding, .section__right {
@@ -88,7 +88,7 @@ html, body {
   float: right; }
 
 .section__left--padding {
-  padding-right: 8.88889%; }
+  padding-right: 12%; }
 
 /*=============================*\
 	Media queries
@@ -125,6 +125,9 @@ h1, h2, h3, .media__content p {
   font-family: "NotoKufiArabicBold", Helvetica, Arial, sans-serif;
   color: #444; }
 
+h2 {
+  font-size: 1.5vw; }
+
 .block {
   width: 100%;
   color: cyan;
@@ -156,13 +159,13 @@ h1, h2, h3, .media__content p {
 /* ============== *\
   	Media Vertical
 \* ============== */
-.media--large .media__content {
+.media--large.media__vertical .media__content {
   padding-right: 15%; }
 
-.media--medium {
+.media--medium.media__vertical {
   text-align: center; }
 
-.media--tiny {
+.media--tiny.media__vertical {
   width: 33.33%;
   text-align: center;
   float: right; }

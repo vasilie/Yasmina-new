@@ -9,7 +9,7 @@ html, body {
 }
 .section__wrapper {
 	width:100%;
-	padding:0 12%;
+	padding:0 calc-perc(130px, 1350px);
 	overflow:hidden;
 }
 .section__left, .section__right {
@@ -26,7 +26,7 @@ html, body {
 }
 .section__left--padding {
 	@extend .section__left;
-	padding-right: calc-perc(120px, 1350px);
+	padding-right: 12%;
 }
 
 /*=============================*\

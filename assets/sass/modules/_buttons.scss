@@ -1,0 +1,9 @@
+.link {
+	color:$text__color--gold;
+	padding-bottom:10px;
+	border-bottom:1px solid $color__primary--gold;
+}
+.link--centered {
+	@extend .link;
+	text-align:center;
+}

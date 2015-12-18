@@ -62,7 +62,8 @@ table {
   font-family: NotoNashkRegular;
   src: url(../../assets/font/NotoNaskhArabic-Regular.ttf); }
 html, body {
-  width: 100%; }
+  width: 100%;
+  direction: rtl; }
 
 .page-wrapper {
   max-width: 1350px;
@@ -80,8 +81,7 @@ html, body {
 
 .section__left, .section__left--padding {
   width: 47%;
-  float: left;
-  background: lightgray; }
+  float: left; }
 
 .section__right {
   width: 53%;
@@ -89,6 +89,24 @@ html, body {
 
 .section__left--padding {
   padding-right: 12%; }
+
+.footer {
+  width: 100%;
+  float: left; }
+
+.footer__heading {
+  width: 100%;
+  text-align: center; }
+
+.footer__left, .footer__right {
+  width: 50%;
+  float: left; }
+
+.footer__left {
+  padding-right: 1%; }
+
+.footer__right {
+  padding-left: 1%; }
 
 /*=============================*\
 	Media queries
@@ -121,12 +139,34 @@ html, body {
     position: relative;
     top: 7px; }
 
-h1, h2, h3, .media__content p {
+h1, h2, .media__content p {
   font-family: "NotoKufiArabicBold", Helvetica, Arial, sans-serif;
+  color: #444; }
+
+h3.brand-box__header, .brand-box__text, .brand-box__category {
+  font-family: "NotoSerif", Helvetica, Arial, sans-serif;
+  color: #444;
+  text-align: center; }
+
+.brand-box__text, .link-box__header {
+  font-family: "NotoKufiArabicBold", Helvetica, Arial, sans-serif; }
+
+.brand-box--dark .brand-box__text, .brand-box--dark .brand-box__header, .brand-box--dark .brand-box__category {
+  color: #fff; }
+
+.link-box__header {
+  color: #444;
+  font-size: 1.3vw; }
+
+a {
+  text-decoration: none;
   color: #444; }
 
 h2 {
   font-size: 1.5vw; }
+
+.link-box {
+  text-align: center; }
 
 .block {
   width: 100%;
@@ -159,16 +199,8 @@ h2 {
 /* ============== *\
   	Media Vertical
 \* ============== */
-.media--large.media__vertical .media__content {
+.media__vertical .media__content {
   padding-right: 15%; }
-
-.media--medium.media__vertical {
-  text-align: center; }
-
-.media--tiny.media__vertical {
-  width: 33.33%;
-  text-align: center;
-  float: right; }
 
 /* ============== *\
   	Media Horizontal
@@ -178,10 +210,18 @@ h2 {
 .media--large.media__horizontal .media__content {
   width: 50%;
   padding-right: 4%; }
+  .media--large.media__horizontal .media__content h2 {
+    margin-bottom: 25px; }
+  .media--large.media__horizontal .media__content p {
+    line-height: 22px;
+    margin-bottom: 20px;
+    color: #6a6a6a;
+    font-family: "NotoNashkRegular", Helvetica, Arial, sans-serif;
+    font-size: 20px; }
 
-.media--medium.media__horizontal .media__img {
+.media__horizontal .media__img {
   width: 35%; }
-.media--medium.media__horizontal .media__content {
+.media__horizontal .media__content {
   width: 65%;
   padding-right: 4%;
   text-align: right; }
@@ -199,9 +239,110 @@ h2 {
   .fullWidth__baner img {
     width: 100%; }
 
+.brand-box {
+  width: 100%;
+  padding: 4%; }
+
+.brand-box--dark {
+  background: #2b2b2b; }
+
+.brand-box__text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.5vw; }
+
+.brand-box__item {
+  margin-bottom: 30px; }
+  .brand-box__item img {
+    width: 100%; }
+
+.link-box {
+  width: 100%;
+  padding: 4%;
+  background: #dedede; }
+
+.link-box .list__item {
+  border-bottom: 1px solid #bebebe;
+  text-align: right;
+  padding: 13px 0 5px;
+  font-size: 17px;
+  color: #6a6a6a;
+  height: 42px; }
+
+.list__item--last {
+  border-bottom: none; }
+
+.contact-us {
+  width: 100%;
+  text-align: center;
+  background: #2b2b2b;
+  float: left;
+  color: #fff; }
+
+.contact-us__header {
+  margin-top: 30px;
+  font-size: 1.6vw;
+  color: #fff; }
+
+.contact-us__input-wrapper {
+  width: 44%;
+  margin: 20px auto;
+  background: #fff;
+  height: 50px;
+  margin-bottom: 50px; }
+
+.footer-media {
+  float: left;
+  width: 33.33%; }
+
+.footer-media__item img {
+  width: 100%; }
+
+.footer__left .footer-media {
+  padding-right: 3%; }
+
+.footer__right .footer-media {
+  padding-left: 3%; }
+
+.footer__heading {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-top: 60px; }
+
+.footer__heading--small {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.footer-media__heading, .footer-media__text {
+  text-align: center; }
+
+.footer-articles {
+  width: 100%;
+  float: right;
+  margin-top: 40px; }
+
+.footer-articles__item {
+  display: inline-block;
+  margin-left: 25px;
+  position: relative; }
+
+.footer-articles__item:before {
+  content: "-";
+  position: absolute;
+  left: -12px; }
+
 .category {
   padding: 15px 0;
   color: #9e914c; }
+
+.link, .link--centered {
+  color: #9e914c;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #9e914c; }
+
+.link--centered {
+  text-align: center; }
 
 .search {
   width: 14.81481%;

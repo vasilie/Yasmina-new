@@ -1,7 +1,33 @@
-h1, h2, h3, .media__content p {
+h1, h2, .media__content p {
 	font-family: $text__family--KufiBold;
 	color: $text__color--darkGray;
 }
+
+h3.brand-box__header, .brand-box__text, .brand-box__category  {
+	font-family: $text__family--Serif;
+	color: $text__color--darkGray;
+	text-align: center;
+}
+.brand-box__text, .link-box__header {
+	font-family: $text__family--KufiBold;	
+}
+.brand-box--dark {
+	.brand-box__text, .brand-box__header, .brand-box__category {
+		color: $text__color--white;
+	}
+}
+.link-box__header {
+	color: $text__color--darkGray;
+	font-size:1.3vw;	
+}
+a {
+	text-decoration:none;
+	color:#444;
+}
+
 h2 {
 	font-size: 1.5vw;
+}
+.link-box {
+	text-align:center;
 }

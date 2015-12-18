@@ -1,5 +1,6 @@
 html, body {
-	width:100%
+	width:100%;
+	direction:rtl;
 }
 .page-wrapper {
 	max-width:1350px;
@@ -18,7 +19,6 @@ html, body {
 .section__left {
 	width:47%;
 	float:left;
-	background: lightgray;
 }
 .section__right {
 	width:53%;
@@ -27,6 +27,24 @@ html, body {
 .section__left--padding {
 	@extend .section__left;
 	padding-right: 12%;
+}
+.footer {
+	width:100%;
+	float:left;
+}
+.footer__heading {
+	width:100%;
+	text-align:center;
+}
+.footer__left, .footer__right {
+	width:50%;
+	float:left;
+}
+.footer__left {
+	padding-right:1%;
+}
+.footer__right {
+	padding-left:1%;
 }
 
 /*=============================*\

@@ -13,6 +13,20 @@ html, body {
 	padding:0 calc-perc(130px, 1350px);
 	overflow:hidden;
 }
+.section--dark {
+	background: $color__primary--darkGray;
+	.media {
+		border-bottom:none;
+	}
+	h2 {
+		color:$text__color--smoke;
+	}
+}
+.section__heading {
+	text-align:right;
+	color:$text__color--white;
+	padding:20px 0;
+}
 .section__left, .section__right {
 	border:1px solid indianred; // just for testing
 }

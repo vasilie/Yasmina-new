@@ -1,0 +1,42 @@
+.carousel {
+	width:100%;
+	background: $color__primary--darkGray;
+	overflow:hidden;
+	.category {
+		width: 100%;
+		float: right;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
+}
+.carousel__heading {
+	text-align:right;
+	color:$text__color--white;
+	padding:20px 0;
+}
+.carousel__media {
+	float:right;
+	width:25%;
+	padding-right: 2.5%;
+}
+.carousel__media--first {
+	width:50%;
+	padding-right:0;
+}
+.carousel__item {
+	float:right;
+	width:100%;
+	img {
+		width: 100%;
+		float: right;
+	}
+}
+.carousel__text {
+	color:$text__color--white;
+	float:right;
+	margin-bottom: 25px;
+}
+.gallery__item {
+	width:50%;
+	float:right;
+}

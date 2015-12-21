@@ -31,3 +31,16 @@ h2 {
 .link-box {
 	text-align:center;
 }
+.gallery, .carousel {
+	font-family: $text__family--KufiBold;
+	color:$text__color--smoke;
+}
+.category {
+	font-family:$text__family--NashkRegular;
+}
+
+@media screen and (max-width: 1024px) { 
+	h2 {
+		font-size: 6vw;
+	}
+}

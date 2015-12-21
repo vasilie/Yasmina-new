@@ -1,13 +1,17 @@
 .carousel {
 	width:100%;
-	background: $color__primary--darkGray;
+	background: $color__primary--megaDarkGray;
 	overflow:hidden;
+	margin-bottom: 20px;
 	.category {
 		width: 100%;
 		float: right;
 		padding-bottom: 5px;
 		padding-top: 5px;
 	}
+}
+.carousel__wrap {
+	overflow:hidden;
 }
 .carousel__heading {
 	text-align:right;
@@ -17,7 +21,7 @@
 .carousel__media {
 	float:right;
 	width:25%;
-	padding-right: 2.5%;
+	padding-right: 3%;
 }
 .carousel__media--first {
 	width:50%;
@@ -32,11 +36,42 @@
 	}
 }
 .carousel__text {
-	color:$text__color--white;
+	color:$text__color--smoke;
 	float:right;
 	margin-bottom: 25px;
 }
 .gallery__item {
 	width:50%;
 	float:right;
+}
+.gallery {
+	padding-bottom: 20px;
+	overflow: hidden;
+	.media__horizontal {
+		margin-right: 15%;
+	}
+	.media__vertical .line {
+		@extend .line--right;
+	}
+	h2 {
+		color:$text__color--smoke;
+	}
+}
+
+@media screen and (max-width: 1024px) { 
+	.carousel {
+		width: 90%;
+		margin:5%;
+		.section__heading {
+			text-align: center;
+		}
+	}
+	.carousel__wrap {
+		// width: 5000%;
+	}
+	.carousel__media {
+		width: 100%;
+		float: left;
+		padding:0;
+	}
 }

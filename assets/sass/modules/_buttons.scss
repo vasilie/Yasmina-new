@@ -2,8 +2,13 @@
 	color:$text__color--gold;
 	padding-bottom:10px;
 	border-bottom:1px solid $color__primary--gold;
+	font-family: $text__family--NashkRegular;
 }
 .link--centered {
 	@extend .link;
 	text-align:center;
+}
+.link--left {
+	@extend .link;
+	float:left;
 }

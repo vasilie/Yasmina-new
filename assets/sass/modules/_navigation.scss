@@ -1,7 +1,14 @@
 .search {
-	width:calc-perc(200px, 1350px);
+	width:calc-perc(170px, 1350px);
 	height:100%;
 	float:left;
+	margin-right: 2.22%;
+	margin-top: 10px;
+	border-right:1px solid $border__color--darkGray;
+	img {
+		height: 23px;
+	    margin-right: 20px;
+	}
 }
 .nav {
 	width:calc-perc(950px, 1350px);
@@ -27,4 +34,44 @@
 }
 .nav__link:hover {
 	color:$text__color--gold;
+}
+
+@media screen and (max-width: 1024px) { 
+	.fullWidth__baner img {
+	    width: 200%;
+	    left: 50%;
+	    position: relative;
+	}
+	.search {
+		display: block;
+		width: 50px;
+		height: 50px;
+		border:1px solid $color__primary--lightgray;
+	}
+	.nav__item {
+		width: 49%;
+		text-align: right;
+		background-image: none;
+		border-right:1px solid $color__primary--lightgray;
+		border-bottom:1px solid $color__primary--lightgray;
+		width: 50%;
+		padding: 0;
+		float: right;
+		padding-right: 16px;
+		font-size: 4vw;
+	}
+	.nav__item--static {
+		// @extend .nav__item;
+		background: $color__primary--lightgray;
+		height: 45px;
+		line-height: 45px;
+		text-align:center;
+		border-right:1px solid $color__primary--gray;
+		border-bottom:1px solid $color__primary--gray;
+		font-size: 3.6vw;
+		float: left;
+		width: 50%;
+		display: block;
+
+	}
 }

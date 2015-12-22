@@ -96,17 +96,28 @@
 }
 .add {
 	width:100%;
-	background: #333;
 	img {
 		width: 100%;
 	}
 }
 .fullWidth__baner {
 	width:100%;
+	position:relative;
 	float:left;
 	img {
 		width: 100%;
 	}
+}
+.central__box {
+	width: 36%;
+	position: absolute;
+	left: 32%;
+	height: 34%;
+	bottom: -4%;
+	background: #fff;
+	text-align: center;
+	padding-top: 22px;
+	border-bottom: 1px solid $border__color--darkGray;
 }
 .main__heading {
 	float: left;
@@ -237,5 +248,13 @@
 	}
 	.media__small--last {
 		margin-bottom: 20px;
+	}
+	.central__box {
+		width: 80%;
+		left: 10%;
+		h2, .category {
+			font-size: 13px;
+		}
+
 	}
 }

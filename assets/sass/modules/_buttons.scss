@@ -1,6 +1,6 @@
 .link {
 	color:$text__color--gold;
-	padding-bottom:10px;
+	padding-bottom:7px;
 	border-bottom:1px solid $color__primary--gold;
 	font-family: $text__family--NashkRegular;
 }
@@ -32,3 +32,15 @@
 	font-size: 20px;
 	font-family:$text__family--NashkRegular;
 }
+.box__button {
+	height:20px;
+	background: $color__primary--gold;
+	color:$text__color--white;
+	float: right;
+	padding: 5px 14px;
+    font-size: 13px;
+	line-height: 9px;
+	float:right;
+	font-family:$text__family--Serif;
+	margin-top: 15px;
+} 

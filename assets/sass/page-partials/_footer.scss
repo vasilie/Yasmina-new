@@ -135,7 +135,22 @@
 		width: 500px;
 		left: calc((100% - 500px) / 2);
 		text-align: center;
-		top: 34px;
+		top: 25px;
+		li {
+			display: inline-block;
+			margin: 0 26px;
+			position: relative;
+			color:$text__color--lightGray;
+			&:before{
+				content: "-";
+				position: absolute;
+				height: 10px;
+				width: 10px;
+				left: -32px;
+				top: 0;
+
+			}
+		}
 	}
 
 }
@@ -171,6 +186,12 @@
 	}
 	.copyright {
 		display: none;
+		li {
+			display: inline-block;
+			margin: 10px;
+			position:relative;
+
+		}
 	}
 	.footer__logo {
 		width: 100%;

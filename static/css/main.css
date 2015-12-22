@@ -409,16 +409,27 @@ h2 {
       font-size: 18px; }
 
 .add {
-  width: 100%;
-  background: #333; }
+  width: 100%; }
   .add img {
     width: 100%; }
 
 .fullWidth__baner {
   width: 100%;
+  position: relative;
   float: left; }
   .fullWidth__baner img {
     width: 100%; }
+
+.central__box {
+  width: 36%;
+  position: absolute;
+  left: 32%;
+  height: 34%;
+  bottom: -4%;
+  background: #fff;
+  text-align: center;
+  padding-top: 22px;
+  border-bottom: 1px solid #bebebe; }
 
 .main__heading {
   float: left;
@@ -530,10 +541,16 @@ h2 {
     font-size: 14px !important; }
 
   .media__small--last {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .central__box {
+    width: 80%;
+    left: 10%; }
+    .central__box h2, .central__box .category {
+      font-size: 13px; } }
 .link, .link--centered, .link--left {
   color: #9e914c;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
   border-bottom: 1px solid #9e914c;
   font-family: "NotoNashkRegular", Helvetica, Arial, sans-serif; }
 
@@ -562,6 +579,18 @@ h2 {
   line-height: 40px;
   font-size: 20px;
   font-family: "NotoNashkRegular", Helvetica, Arial, sans-serif; }
+
+.box__button {
+  height: 20px;
+  background: #9e914c;
+  color: #fff;
+  float: right;
+  padding: 5px 14px;
+  font-size: 13px;
+  line-height: 9px;
+  float: right;
+  font-family: "NotoSerif", Helvetica, Arial, sans-serif;
+  margin-top: 15px; }
 
 .carousel {
   width: 100%;
@@ -1128,7 +1157,19 @@ h2 {
     width: 500px;
     left: calc((100% - 500px) / 2);
     text-align: center;
-    top: 34px; }
+    top: 25px; }
+    .footer--end .copyright li {
+      display: inline-block;
+      margin: 0 26px;
+      position: relative;
+      color: #6a6a6a; }
+      .footer--end .copyright li:before {
+        content: "-";
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        left: -32px;
+        top: 0; }
 
 /*=============================*\
 	Media queries
@@ -1159,6 +1200,10 @@ h2 {
 
   .copyright {
     display: none; }
+    .copyright li {
+      display: inline-block;
+      margin: 10px;
+      position: relative; }
 
   .footer__logo {
     width: 100%;

@@ -8,13 +8,13 @@
 	border-bottom: 1px solid $color__primary--lightgray;
 }
 .comment__heading {
-    font-size: 1.3vw;
+    font-size: 24px;
     margin-bottom: 13px;
 }
 .comment__author {
 	color:$text__color--gold;
 	font-size: 1.1vw;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
 }
 .post-comment {
 	.input__wrapper {
@@ -32,9 +32,11 @@
 }
 .comment__text {
 	font-family:$text__family--NashkRegular;
+	line-height: 28px;
 }
 .name {
 	padding: 20px;
+	font-size:24px;
 }
 
 // ============== 

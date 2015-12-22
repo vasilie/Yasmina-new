@@ -297,7 +297,8 @@ html, body {
 
   .box__text {
     padding: 5%;
-    font-size: 20px; }
+    font-size: 18px;
+    line-height: 20px; }
 
   .box__links {
     padding: 5%; }
@@ -563,7 +564,14 @@ h2 {
     width: 80%;
     left: 10%; }
     .central__box h2, .central__box .category {
-      font-size: 13px; } }
+      font-size: 13px; }
+
+  .main__social-wrapper {
+    margin-left: 5%; }
+    .main__social-wrapper img {
+      float: none;
+      width: 30%;
+      float: left; } }
 .link, .link--centered, .link--left {
   color: #9e914c;
   padding-bottom: 7px;

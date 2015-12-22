@@ -16,6 +16,11 @@
 	font-size: 1.1vw;
     margin-bottom: 13px;
 }
+.post-comment {
+	.input__wrapper {
+		width: 88%;
+	}
+}
 .post-comment__button {
 	line-height: 50px;
 	text-align: center;
@@ -24,10 +29,12 @@
 	margin-top: 20px;
 	background: $color__primary--gold;
 	color:$text__color--white;
-	font-weight:bold;
 }
 .comment__text {
 	font-family:$text__family--NashkRegular;
+}
+.name {
+	padding: 20px;
 }
 
 // ============== 
@@ -96,5 +103,18 @@
 	.contact-us__header {
 		font-size: 24px;
 		margin-top: 33px;
+	}
+	.contact-us__input {
+		font-size: 16px;
+	}
+	.post-comment {
+		width: 100%;
+		padding-left: 11%;
+		.input__wrapper {
+			width: 78%;
+		}
+	}
+	.comment__heading {
+		margin-top: 10px;
 	}
 }

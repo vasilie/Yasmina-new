@@ -1,3 +1,31 @@
 .border--bottom {
 	border-bottom:1px solid $border__color--lightGray;
 }
+.margin-top {
+	margin-top:25px;
+}
+.no-margin-top {
+	margin-top:0;
+}
+.no-margin-bottom {
+	margin-bottom:0;
+}
+
+
+/*=============================*\
+	Media queries
+\*=============================*/
+
+@media screen and (max-width: 1024px) {
+	.add-mobile-padding{
+		padding:10%;
+		padding-bottom:5%;
+	}
+	.mobile-padding--small {
+		padding:5%;
+		padding-bottom:0;
+	}
+	.no-padding {
+		padding:0;
+	}
+}

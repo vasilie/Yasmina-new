@@ -67,15 +67,19 @@
 	overflow: hidden;
 	.media__horizontal {
 		margin-right: 15%;
+		.media__content {
+			padding-right:3%;
+		}
 	}
 	.media__vertical .line {
 		@extend .line--right;
 	}
 	h2 {
 		color:$text__color--smoke;
+		font-size: 22px;
 	}
 	.media__content {
-		padding-right:25%;
+		padding-right:16%;
 	}
 }
 

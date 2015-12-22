@@ -29,8 +29,8 @@
 	background-image: url(../../assets/img/bullet__square--gold.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
-	height: 45px;
-	line-height: 45px;
+	height: 55px;
+	line-height: 55px;
 }
 .nav__item--static {
 	display:none;
@@ -98,6 +98,10 @@
 			max-height: 350px;
 		}
 	}
+	.nav__link {
+		font-size: 16px;
+		font-weight: normal;
+	}
 	.nav__item {
 		width: 49%;
 		text-align: right;
@@ -112,8 +116,8 @@
 	}
 	.nav__item--static {
 		background: $color__primary--lightgray;
-		height: 45px;
-		line-height: 45px;
+		height:  55px;
+		line-height: 55px;
 		text-align:center;
 		border-right:1px solid $color__primary--gray;
 		border-bottom:1px solid $color__primary--gray;
@@ -121,6 +125,8 @@
 		float: left;
 		width: 50%;
 		display: block;
+		font-size: 16px;
+		font-weight: normal;
 
 	}
 	.menu__icon {

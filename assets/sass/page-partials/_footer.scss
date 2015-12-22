@@ -150,9 +150,32 @@
 		margin-top: 20px;
 	}
 	.footer__left, .footer__right {
-		width: 90%;
+		width: 100%;
 		float: left;
-		margin-left: 7%;
 		border-right: none;
+		padding:0;
+	}
+	.social {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+		margin-top: 100px;
+	}
+	.footer {
+		padding: 0 5%;
+		width: 100%;
+
+	}
+	.footer-articles {
+		margin-top:0;
+	}
+	.copyright {
+		display: none;
+	}
+	.footer__logo {
+		width: 100%;
+		text-align: center;
+		position: relative;
+		top: -120px;
 	}
 }

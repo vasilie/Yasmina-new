@@ -1,5 +1,6 @@
 .header {
 	width:100%;
+	position: relative;
 }
 .banner {
 	width:100%;
@@ -21,5 +22,22 @@
 	img {
 		position: relative;
 		top: 7px;
+	}
+}
+
+/*=============================*\
+	Media queries
+\*=============================*/
+
+@media screen and (max-width: 1024px) {
+	.logo {
+		height: 50px;
+		width: calc(100% - 100px);
+		img {
+			position: relative;
+			top: 7px;
+			height: 60%;
+			top: 20%;
+		}
 	}
 }

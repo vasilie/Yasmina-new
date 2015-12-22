@@ -1,0 +1,207 @@
+// ============== 
+// Brand Box
+
+.brand-box {
+	width:100%;
+	padding:4%;
+	text-align:center;
+	padding-bottom: 35px;
+	margin-bottom: 40px;
+	border: 1px solid;
+}
+.brand-box--dark {
+	background: $color__primary--megaDarkGray;
+}
+.brand-box__text {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.5vw;
+}
+.brand-box__item {
+	margin-bottom: 30px;
+	img {
+		width: 100%;
+	}
+}
+.brand-box--mobile {
+	display:none;
+}
+
+// ============== 
+// Link Box
+
+.link-box {
+	width:100%;
+	padding:8%;
+	background: $color__primary--gray;
+	padding-bottom: 40px;
+	.list__item {
+		border-bottom:1px solid $border__color--darkGray;
+		text-align: right;
+		padding: 13px 0 5px;
+		color:$text__color--darkGray;
+		font-family: $text__family--NashkRegular;
+		font-size: 20px;
+		padding-left: 54px;
+		line-height: 25px;
+	}
+	ul {
+		margin-top:20px;
+		margin-bottom: 40px;
+	}
+}
+.list__item--last {
+	border-bottom:none;
+}
+
+// ==============
+// Box
+
+.box {
+	width:100%;
+	float:left;
+	padding: 30px 0;
+	border-bottom: 1px solid $color__primary--gray;
+	.author {
+		color:$text__color--gold;
+		padding: 20px 0;
+		display: block;
+	    font-weight: bold;
+	    font-size: 1.2vw;
+	}
+	img {
+		width: 100%;
+	}
+}
+.box__text {
+	float: left;
+	margin-top: 30px;
+	font-size: 1vw;
+	color:$text__color--lightGray;
+	font-family:$text__family--NashkRegular;
+	width:100%;
+}
+.box__headline {
+	color: $color__primary--gold;
+	text-align:center;
+	width:100%;
+	float:left;
+	margin-top: 30px;
+	text-decoration: underline;
+}
+.box__links {
+	margin-top:20px;
+	float:left;
+	line-height:24px;
+}
+.box__link {
+	color:$color__primary--gold;
+	display:inline;
+	margin-left: 25px;
+	margin-top:30px;
+}
+
+// ==============
+// Mashasheri
+
+.mashasheri {
+	width:100%;
+	padding: 5%;
+	padding-bottom:35px;
+	text-align: center;
+	background: $color__primary--megaDarkGray;
+	.media {
+		border-bottom:none;
+		padding-bottom: 0;
+	}
+	.media__content {
+		h2 {
+			font-size: 23px;
+			margin-top: 25px;
+			color:$text__color--smoke;
+			text-align: right;
+		}
+	}
+}
+.mashasheri__logo {
+	margin-bottom:10px;
+}
+.mashasheri__item {
+	width:100%;
+	text-align:right;
+	.media__img {
+		float: right;
+		width: 40%;
+	}
+	.media__content {
+		float: right;
+		width: 60%;
+		padding-right:10px;
+	}
+	.line:before {
+		top: -25px;
+		right: 20px;
+	}
+
+}
+.mashasheri__item--big {
+	width:100%;
+	.media__img, .media__content {
+		float: right;
+		width: 100%;
+	}
+	.media__content {
+		padding-right: 25%;
+	}
+	.line:before {
+		top:15px;
+		right: -88px;
+	}
+}
+
+/*=============================*\
+	Media queries
+\*=============================*/
+
+@media screen and (max-width: 1024px) {
+	.brand-box {
+		display: none;
+	}
+	.brand-box--mobile {
+		display: block;
+	}
+	.link-box {
+		width: 90%;
+		margin:5%;
+	}
+	.link-box__header, .contact-us__header {
+		font-size: 24px;
+	}
+	.mashasheri {
+		padding-bottom: 50px;
+		overflow: hidden;
+		.link--centered {
+			display: none;
+		}
+		.media {
+			width: 100%;
+			float: left;
+			margin:0;
+		}
+		.carousel__bullets {
+			margin-top:20px;
+		}
+		h2 {
+			font-size: 20px;
+		}
+		.line:before {
+			top:9px !important;
+		}
+	}
+	.mashasheri__item {
+		display: none;
+	}
+	.mashasheri__logo {
+		width: 100%;
+	}
+}

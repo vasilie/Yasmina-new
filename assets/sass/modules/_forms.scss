@@ -1,0 +1,97 @@
+.comments {
+	text-align:right;
+	color:$text__color--darkGray;
+	 font-size: 1vw;
+}
+.comment {
+	padding-bottom: 30px;
+	border-bottom: 1px solid $color__primary--lightgray;
+}
+.comment__heading {
+    font-size: 1.3vw;
+    margin-bottom: 13px;
+}
+.comment__author {
+	color:$text__color--gold;
+	font-size: 1.1vw;
+    margin-bottom: 13px;
+}
+.post-comment__button {
+	line-height: 50px;
+	text-align: center;
+	width: 93px;
+	float: right;
+	margin-top: 20px;
+	background: $color__primary--gold;
+	color:$text__color--white;
+	font-weight:bold;
+}
+
+// ============== 
+// Contact Us
+
+.contact-us {
+	width:100%;
+	text-align:center;
+	background: $color__primary--megaDarkGray;
+	float: left;
+	color:$text__color--white;
+}
+.contact-us__header {
+	margin-top: 50px;
+	font-size:1.6vw;
+	color:$text__color--white;
+}
+.contact-us__input-wrapper {
+	width: 51%;
+	margin: 20px auto;
+	background: #fff;
+	height: 50px;
+	margin-bottom:50px;
+}
+.contact-us__input {
+	width: calc(100% - 200px);
+	outline: none;
+	border: none;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	font-size: 20px;
+}
+.contact-us__text {
+	margin-top: 20px;
+	font-size: 20px;
+	font-family: $text__family--NashkRegular;
+	width: 60%;
+	margin-left: 15%;
+	margin: 20px 20% 35px;
+	line-height:27px;
+	color:$text__color--smoke;
+}
+.input-box {
+	width:100%;
+	border:1px solid $text__color--smoke;
+	height:100px;
+}
+.input__wrapper {
+	width:70%;
+	float: left;
+}
+/*=============================*\
+	Media queries
+\*=============================*/
+@media screen and (max-width: 1024px) { 
+	.contact-us__input-wrapper {
+		width:96%;
+	}
+	.contact-us__text {
+		width: 96%;
+		margin-left: 2%;
+		font-size: 18px;
+		margin-right: 2%;
+	}
+	.contact-us__header {
+		font-size: 24px;
+		margin-top: 33px;
+	}
+}

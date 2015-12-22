@@ -1,0 +1,158 @@
+// ============== 
+// Footer Media
+
+.footer-media {
+	float:left;
+	width:33.33%;
+	max-height: 170px;
+	margin-bottom: 24px;
+}
+.footer-media__item {
+	margin-bottom: 12px;
+	img {
+		width: 100%;
+	}
+}
+.footer__left {
+	border-right:1px solid $border__color--darkGray;
+	position:relative;
+	margin-top: 60px;
+}
+.footer__right {
+	position:relative;
+	margin-top: 60px;
+}
+.footer__left .footer-media {
+	padding-right:3%;
+}
+.footer__right .footer-media {
+	padding-left:3%;
+}
+.footer__heading {
+	width:100%;
+	text-align:center;
+	font-size:1.5vw;
+}
+.footer__heading--small {
+	text-align: center;
+	margin-bottom: 20px;
+	position: absolute;
+	width: 100%;
+	top: -35px;
+	font-family:$text__family--KufiBold;
+}
+.footer-media__heading, .footer-media__text {
+	text-align:center;
+	font-family:$text__family--NashkRegular;
+}
+.footer-media__text {
+	margin-top: 3px;
+	color:$text__color--lightGray;
+	height: 20px;
+}
+.brand {
+	font-family:$text__family--Serif;
+}
+
+// ============== 
+// Footer Articles & Tags
+
+.footer__left .footer-articles {
+	margin-right: 3%;
+}
+.footer-articles, .footer-tags {
+	width: 100%;
+	float: right;
+	margin-top: 40px;
+}
+.footer-tags {
+	margin-bottom:30px;
+}
+.footer-articles__item {
+	display: inline-block;
+	margin-bottom: 20px;
+	position: relative;
+	margin-left: 38px;
+}
+.footer-articles__item--last {
+	a {
+		color:$text__color--gold;
+	}
+	&:before {
+		display: none;
+	}
+}
+.footer-articles__item:before {
+	content: "-";
+	position: absolute;
+	left: -22px;
+}
+.footer-tags__item {
+	display:inline-block;
+	padding:10px;
+	border:1px solid $color__primary--gold;
+	font-family:$text__family--NashkBold;
+	margin-left:10px;
+	margin-bottom: 10px;
+}
+.footer-tags__item--first {
+	border:none;
+}
+.footer-tags__item--last {
+	border:none;
+	a {
+		color:$text__color--gold;
+	}
+}
+.category {
+	padding: 15px 0;
+	color:$text__color--gold;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+// ============== 
+// Footer Copyright
+
+.footer--end {
+	padding-top: 20px;
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom:100px;
+	border-top:1px solid $border__color--lightGray;
+	.social, {
+		float: left;
+	}
+	.footer__logo {
+		float: right;
+		img {
+			width: 170px;
+		}
+	}
+	.copyright {
+		position:absolute;
+		width: 500px;
+		left: calc((100% - 500px) / 2);
+		text-align: center;
+		top: 34px;
+	}
+
+}
+
+/*=============================*\
+	Media queries
+\*=============================*/
+
+@media screen and (max-width: 1024px) {
+	.footer__heading {
+		font-size: 24px;
+		margin-top: 20px;
+	}
+	.footer__left, .footer__right {
+		width: 90%;
+		float: left;
+		margin-left: 7%;
+		border-right: none;
+	}
+}

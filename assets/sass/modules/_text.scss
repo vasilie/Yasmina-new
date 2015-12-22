@@ -39,6 +39,10 @@ h2 {
 	font-family:$text__family--NashkRegular;
 }
 
+/*=============================*\
+	Media queries
+\*=============================*/
+
 @media screen and (max-width: 1024px) { 
 	h2 {
 		font-size: 6vw;

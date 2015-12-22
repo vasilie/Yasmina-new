@@ -12,3 +12,23 @@
 	@extend .link;
 	float:left;
 }
+.icon--mail {
+	height:50px;
+	width:100px;
+	background-image: url(../../assets/img/letter-box.png);
+	background-repeat:no-repeat;
+	float:right;
+	background-position:center;
+}
+.button--mail {
+	height: 40px;
+	width: 90px;
+	margin: 5px;
+	background: #9e914c;
+	color: #fff;
+	text-align: center;
+	float: left;
+	line-height: 40px;
+	font-size: 20px;
+	font-family:$text__family--NashkRegular;
+}

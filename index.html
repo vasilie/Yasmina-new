@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="static/css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src='assets/js/main.js'></script>
 </head>
 <body>
 	<div class="page-wrapper">
@@ -14,11 +15,15 @@
 				<img src="assets/img/banner1.png" alt="banner1">
 			</div>
 			<div class="logo__wrapper">
+				<div class="search">
+					<img src="assets/img/search__icon.png" alt="">
+				</div>
 				<div class="logo">
 					<img src="assets/img/logo.png" alt="">
 				</div>
+				<div class="menu__icon"></div>
 			</div>
-			<div class="search">
+			<div class="search search--desk">
 				<img src="assets/img/search__icon.png" alt="">
 			</div>
 			<ul class="nav">
@@ -35,7 +40,9 @@
 				<li class="nav__item"><a href='#' class='nav__link'>ستايل</a></li>
 				<li class="nav__item"><a href='#' class='nav__link'>الصحة</a></li>
 			</ul>
-			<div class="menu__icon"></div>
+			<div class="nav__item--static">تجميل</div>
+			<div class="nav__item--static">الشخصية</div>
+
 		</div>
 		<div class="fullWidth__baner">
 			<img src="assets/img/fullscreenArticle.png" alt="">
@@ -128,6 +135,24 @@
 					</div>
 					<a class="link--centered">المجوهرات</a>
 				</div>
+				<div class="media media__vertical brand-box--mobile media--no-border">
+					<div class="media__img">
+						<img src="assets/img/img10.png" alt="">
+					</div>
+					<div class="media__content">
+						<div class="category line--right">مصمّمة</div>
+						<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+					</div>
+				</div>
+<!-- 				<div class="brand-box brand-box--dark brand-box--mobile">
+					<div class="brand-box__item">
+						<img src="assets/img/img10.png" alt="">
+					</div>
+					<div class="brand-box__text">مقابلة لياسمينة مع مصمّمة المجوهرات</div>
+					<h3 class="brand-box__header">FASHION POLICE</h3>
+					<div class="line--center"></div>
+					<a class="link--centered">المجوهرات</a>
+				</div> -->
 			</div>
 		</div>
 		<div class="section__wrapper section--dark">
@@ -180,6 +205,13 @@
 						</div>
 					</div>											
 				</div>
+				<ul class="carousel__bullets">
+					<li class="carousel__bullet active"></li>
+					<li class="carousel__bullet"></li>
+					<li class="carousel__bullet"></li>
+					<li class="carousel__bullet"></li>
+					<li class="carousel__bullet"></li>
+				</ul>
 			<div class="link--left">لياسمينة</div>
 			</div>
 		</div>
@@ -223,6 +255,15 @@
 					</div>
 					<a class="link--centered">المجوهرات</a>
 				</div>
+				<div class="media media__vertical brand-box--mobile media--no-border">
+					<div class="media__img">
+						<img src="assets/img/img14.png" alt="">
+					</div>
+					<div class="media__content">
+						<div class="category line--right">مصمّمة</div>
+						<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+					</div>
+				</div>
 				<div class="brand-box brand-box--type2 brand-box--dark">
 					<div class="brand-box__item">
 						<img src="assets/img/img18.png" alt="">
@@ -232,45 +273,137 @@
 					<div class="brand-box__text">مقابلة لياسمينة مع مصمّمة المجوهرات</div>
 					<a class="link--centered">المجوهرات</a>
 				</div>
+				<div class="media media__vertical brand-box--mobile media--no-border">
+					<div class="media__img">
+						<img src="assets/img/img18.png" alt="">
+					</div>
+					<div class="media__content">
+						<div class="category line--right">مصمّمة</div>
+						<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="section__wrapper section--dark">
 			<h2 class="section__heading">مقابلة لياسمينة مع</h2>
 			<div class="gallery">
-				<div class="gallery__item">
-					<div class="media media__vertical ">
-						<div class="media__img">
-							<img src="assets/img/img24.png" alt="">
+				<div class="carousel__wrap">
+					<div class="gallery__item">
+						<div class="media media__vertical ">
+							<div class="media__img">
+								<img src="assets/img/img24.png" alt="">
+							</div>
+							<div class="media__content">
+								<div class="category line">مصمّمة</div>
+								<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+							</div>
 						</div>
-						<div class="media__content">
-							<div class="category line">مصمّمة</div>
-							<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+					</div>
+					<div class="gallery__item">
+						<div class="media media__horizontal ">
+							<div class="media__img">
+								<img src="assets/img/img22.png" alt="">
+							</div>
+							<div class="media__content">
+								<div class="category line">مصمّمة</div>
+								<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+							</div>
+						</div>
+					</div>
+					<div class="gallery__item">
+						<div class="media media__horizontal ">
+							<div class="media__img">
+								<img src="assets/img/img23.png" alt="">
+							</div>
+							<div class="media__content">
+								<div class="category line">مصمّمة</div>
+								<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="gallery__item">
-					<div class="media media__horizontal ">
-						<div class="media__img">
-							<img src="assets/img/img22.png" alt="">
-						</div>
-						<div class="media__content">
-							<div class="category line">مصمّمة</div>
-							<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
-						</div>
-					</div>
-				</div>
-				<div class="gallery__item">
-					<div class="media media__horizontal ">
-						<div class="media__img">
-							<img src="assets/img/img23.png" alt="">
-						</div>
-						<div class="media__content">
-							<div class="category line">مصمّمة</div>
-							<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
-						</div>
-					</div>
-				</div>
+				<ul class="carousel__bullets">
+					<li class="carousel__bullet active"></li>
+					<li class="carousel__bullet"></li>
+					<li class="carousel__bullet"></li>
+					<li class="carousel__bullet"></li>
+					<li class="carousel__bullet"></li>
+				</ul>
 				<div class="link--left">لياسمينة</div>
+			</div>
+		</div>
+		<div class="section__wrapper">
+			<div class="section__right">
+				<div class="media media__horizontal ">
+					<div class="media__img">
+						<img src="assets/img/img2.png" alt="">
+					</div>
+					<div class="media__content">
+						<div class="category line">مصمّمة</div>
+						<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+					</div>
+				</div>
+				<div class="media media__horizontal ">
+					<div class="media__img">
+						<img src="assets/img/img3.png" alt="">
+					</div>
+					<div class="media__content">
+						<div class="category line">مصمّمة</div>
+						<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+					</div>
+				</div>
+				<div class="media media__horizontal ">
+					<div class="media__img">
+						<img src="assets/img/img3.png" alt="">
+					</div>
+					<div class="media__content">
+						<div class="category line">مصمّمة</div>
+						<h2>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+					</div>
+				</div>
+			</div>
+			<div class="section__left--padding">
+				<div class="mashasheri">
+					<img class='mashasheri__logo' src="assets/img/mashacheeri__logo.png" alt="">
+					<div class="mashasheri__item--big">
+						<div class="media ">
+							<div class="media__img">
+								<img src="assets/img/img25.png" alt="">
+							</div>
+							<div class="media__content">
+								<h2 class='line'>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+							</div>
+						</div>
+					</div>
+					<div class="mashasheri__item">
+						<div class="media ">
+							<div class="media__img">
+								<img src="assets/img/img42.png" alt="">
+							</div>
+							<div class="media__content">
+								<h2 class='line'>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+							</div>
+						</div>
+					</div>
+					<div class="mashasheri__item">
+						<div class="media ">
+							<div class="media__img">
+								<img src="assets/img/img43.png" alt="">
+							</div>
+							<div class="media__content">
+								<h2 class='line'>مقابلة لياسمينة مع مصمّمة المجوهرات</h2>
+							</div>
+						</div>
+					</div>
+					<ul class="carousel__bullets">
+						<li class="carousel__bullet active"></li>
+						<li class="carousel__bullet"></li>
+						<li class="carousel__bullet"></li>
+						<li class="carousel__bullet"></li>
+						<li class="carousel__bullet"></li>
+					</ul>
+					<a class="link--centered">لياسمينة</a>
+				</div>
 			</div>
 		</div>
 		<div class="section__wrapper">
@@ -338,16 +471,16 @@
 		<div class="contact-us">
 			<h2 class="contact-us__header">المجوهرات</h2>
 			<div class="line--center"></div>
-			<p class="contact-us__text">مقابلة لياسمينة مع مصمّمة المجوهراتمقابلة لياسمينة مع مصمّمة المجوهرات</p>
+			<p class="contact-us__text">مقابلة لياسمينة مع مصمّمة المجوهراتمقابلة لياسميمينة مع مصمّمة المجوهراتمقابلة لياسميمينة مع مصمّمة المجوهراتمقابلة لياسمينة مع مصمّمة المجوهرات</p>
 			<form action="#">
 				<div class="contact-us__input-wrapper">
-					<div class="button"></div>
-					<input type="text" class="contact-us__input">
+					<div class="button--mail">العيد</div>
+					<input type="text" placeholder=' المجوهراتمقابلة ' class="contact-us__input">
 					<div class="icon--mail"></div>
 				</div>
 			</form>
 		</div>
-		<div class="section__wrapper border-r-bottom">
+		<div class="section__wrapper border-bottom">
 			<div class="footer">
 				<h2 class="footer__heading">ع مصمّمة المجوهراتمقا</h2>
 				<div class="line--center"></div>

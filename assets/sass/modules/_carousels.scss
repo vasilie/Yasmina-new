@@ -40,6 +40,24 @@
 	float:right;
 	margin-bottom: 25px;
 }
+.carousel__bullets{
+	float: left;
+	width: 100%;
+	text-align: center;
+	direction: ltr;
+	display:none;
+}
+.carousel__bullet {
+	width: 16px;
+	margin: 6px;
+	height: 16px;
+	@include borderRadius(50%);
+	display: inline-block;
+	background: $color__primary--darkGray;
+	&.active {
+		background: $color__primary--gold;
+	}
+}
 .gallery__item {
 	width:50%;
 	float:right;
@@ -56,7 +74,14 @@
 	h2 {
 		color:$text__color--smoke;
 	}
+	.media__content {
+		padding-right:25%;
+	}
 }
+
+/*=============================*\
+	Media queries
+\*=============================*/
 
 @media screen and (max-width: 1024px) { 
 	.carousel {
@@ -65,13 +90,45 @@
 		.section__heading {
 			text-align: center;
 		}
+		.link--left {
+			display: none;
+		}
 	}
 	.carousel__wrap {
-		// width: 5000%;
+		overflow: hidden;
+		width: 5000%;
+		float: left;
+		position: relative;
+		left: 0;
 	}
 	.carousel__media {
-		width: 100%;
+		width: 90vw;
 		float: left;
 		padding:0;
+	}
+	.carousel__bullets {
+		display: block;
+	}
+	.gallery {
+		padding:5%;
+		.media {
+			margin:0;
+			width: 100%;
+		}
+		.media__img {
+			width: 100%;
+		}
+		.media__content {
+			width: 100%;
+		}
+		.link--left {
+			display: none;
+		}
+	}
+	.gallery__item {
+		width: 90vw;
+		float: left;
+		margin-right: 5vw;
+		max-height: 100vw;
 	}
 }

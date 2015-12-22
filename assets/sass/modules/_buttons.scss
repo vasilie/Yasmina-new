@@ -44,3 +44,13 @@
 	font-family:$text__family--Serif;
 	margin-top: 15px;
 } 
+
+/*=============================*\
+	Media queries
+\*=============================*/
+
+@media screen and (max-width: 1024px) { 
+	.icon--mail, .button--mail {
+		width: 60px;
+	}
+}

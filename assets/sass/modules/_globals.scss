@@ -10,7 +10,10 @@
 .no-margin-bottom {
 	margin-bottom:0;
 }
-
+.border-bottom--gray {
+	border-bottom:1px solid $border__color--lightGray;
+	padding-bottom: 28px;
+}
 
 /*=============================*\
 	Media queries

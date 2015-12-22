@@ -118,6 +118,9 @@
 	text-align: center;
 	padding-top: 22px;
 	border-bottom: 1px solid $border__color--darkGray;
+	.category {
+		font-size: 15px;
+	}
 }
 .main__heading {
 	float: left;
@@ -212,6 +215,10 @@
 			text-align: right;
 		}
 	}
+	.media--large {
+		margin-bottom: 0;
+		padding-bottom: 14px;
+	}
 	.media--large.media__horizontal {
 		.media__img {
 	   	 width: 100%;
@@ -219,13 +226,13 @@
 		}
 		.media__content {
 		    width: 100%;
-		    padding-right: 20%;
+		    padding-right: 25%;
 		    >p{
 		    	display: none;
 		    }
 		}
 		.line:before {
-			right: -24%;
+			right: -33%;
 			position: absolute;
 			top: 24px;
 		}

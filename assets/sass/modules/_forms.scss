@@ -70,13 +70,13 @@
 }
 .contact-us__text {
 	margin-top: 20px;
-	font-size: 20px;
+	font-size: 24px;
 	font-family: $text__family--NashkRegular;
-	width: 60%;
+	width: 50%;
 	margin-left: 15%;
-	margin: 20px 20% 35px;
+	margin: 20px 25% 35px;
 	line-height:27px;
-	color:$text__color--smoke;
+	color:$text__color--white;
 }
 .input-box {
 	width:100%;
@@ -99,6 +99,7 @@
 		margin-left: 2%;
 		font-size: 18px;
 		margin-right: 2%;
+		line-height: 19px;
 	}
 	.contact-us__header {
 		font-size: 24px;
@@ -106,6 +107,7 @@
 	}
 	.contact-us__input {
 		font-size: 16px;
+		width: calc(100% - 133px);
 	}
 	.post-comment {
 		width: 100%;

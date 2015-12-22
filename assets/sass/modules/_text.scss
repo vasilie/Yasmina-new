@@ -8,7 +8,7 @@ h3.brand-box__header, .brand-box__text, .brand-box__category  {
 	color: $text__color--darkGray;
 	text-align: center;
 }
-.brand-box__text, .link-box__header {
+.brand-box__text, .link-box__header,.brand-box__category {
 	font-family: $text__family--KufiBold;	
 }
 .brand-box--dark {
@@ -38,7 +38,12 @@ h2 {
 .category {
 	font-family:$text__family--NashkRegular;
 }
-
+.brand-box__text {
+	font-size:24px;
+}
+.brand-box__category {
+	font-size: 19px;
+}
 /*=============================*\
 	Media queries
 \*=============================*/

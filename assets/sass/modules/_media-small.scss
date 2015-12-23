@@ -1,0 +1,32 @@
+// ============== 
+// Media Small
+
+.media--small {
+	overflow:hidden;
+	margin-bottom:20px;
+	.media__item {
+		width: 28%;
+		float: right;
+		img {
+			width: 100%;
+			float: right;
+		}
+	}
+	.media__content {
+		width: 65%;
+		padding-right:5%;
+		h2 {
+			font-size: 18px;
+		}
+	}
+	@include breakpoint(mobile){
+		padding: 2% 5%;
+		margin-bottom: 0;
+		.media__content h2 {
+			font-size: 14px !important;
+		}
+	}
+}
+.media__small--last {
+	margin-bottom: 20px;
+}

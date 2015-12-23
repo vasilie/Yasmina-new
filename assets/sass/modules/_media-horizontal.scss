@@ -1,0 +1,66 @@
+// ============== 
+// Media Horizontal
+
+.media--large {
+	@include breakpoint(mobile){
+		margin-bottom: 0;
+		padding-bottom: 14px;
+	}
+}
+.media--large.media__horizontal {
+	.media__img{
+		width:50%;
+	}
+	.media__content{
+		width:50%;
+		padding-right: 4%;
+		h2 {
+			margin-bottom: 25px;
+		}
+		p {
+			line-height: 22px;
+			margin-bottom: 20px;
+			color: $text__color--lightGray;
+			font-family: $text__family--NashkRegular;
+			font-size: 20px;
+		}
+	}
+	@include breakpoint(mobile){
+		.media__img {
+	   	 width: 100%;
+	   	 margin-bottom: 20px;
+		}
+		.media__content {
+		    width: 100%;
+		    padding-right: 25%;
+		    >p{
+		    	display: none;
+		    }
+		}
+		.line:before {
+			right: -33%;
+			position: absolute;
+			top: 24px;
+		}
+	}
+}
+.media__horizontal {
+	.media__img{
+		width:35%;
+	}
+	.media__content{
+		width:65%;
+		padding-right: 4%;
+		text-align: right;
+	}
+	@include breakpoint(mobile){
+		.media__img{
+			width:42%;
+		}
+		.media__content{
+			width:58%;
+			padding-right: 4%;
+			text-align: right;
+		}
+	}
+}

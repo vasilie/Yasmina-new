@@ -28,6 +28,9 @@ html, body {
 	text-align:right;
 	color:$text__color--white;
 	padding:20px 0;
+	@include breakpoint(mobile){
+		text-align: center;
+	}
 }
 .section__left {
 	width:47%;
@@ -40,6 +43,13 @@ html, body {
 .section__left--padding {
 	@extend .section__left;
 	padding-right: 12%;
+}
+.section__left, .section__right, .page-wrapper, .section__wrapper {
+	@include breakpoint(mobile){
+		width: 100%;
+		float: left;
+		padding:0;
+	}
 }
 .footer {
 	width:100%;
@@ -54,19 +64,4 @@ html, body {
 }
 .footer__right {
 	padding-left:1%;
-}
-
-/*=============================*\
-	Media queries
-\*=============================*/
-
-@media screen and (max-width: 1024px) {
-	.section__left, .section__right, .page-wrapper, .section__wrapper {
-		width: 100%;
-		float: left;
-		padding:0;
-	}
-	.section__heading {
-		text-align: center;
-	}
 }

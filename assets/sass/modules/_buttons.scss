@@ -19,6 +19,9 @@
 	background-repeat:no-repeat;
 	float:right;
 	background-position:center;
+	@include breakpoint(mobile){
+		width: 60px;
+	}
 }
 .button--mail {
 	height: 40px;
@@ -31,6 +34,9 @@
 	line-height: 40px;
 	font-size: 20px;
 	font-family:$text__family--NashkRegular;
+	@include breakpoint(mobile){
+		width: 60px;
+	}
 }
 .box__button {
 	height:20px;
@@ -44,13 +50,3 @@
 	font-family:$text__family--Serif;
 	margin-top: 15px;
 } 
-
-/*=============================*\
-	Media queries
-\*=============================*/
-
-@media screen and (max-width: 1024px) { 
-	.icon--mail, .button--mail {
-		width: 60px;
-	}
-}

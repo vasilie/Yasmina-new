@@ -1,0 +1,35 @@
+// ============== 
+// Link Box
+
+.link-box {
+	width:100%;
+	padding:8%;
+	background: $color__primary--gray;
+	padding-bottom: 40px;
+	.list__item {
+		border-bottom:1px solid $border__color--darkGray;
+		text-align: right;
+		padding: 13px 0 5px;
+		color:$text__color--darkGray;
+		font-family: $text__family--NashkRegular;
+		font-size: 20px;
+		padding-left: 54px;
+		line-height: 25px;
+	}
+	ul {
+		margin-top:20px;
+		margin-bottom: 40px;
+	}
+	@include breakpoint(mobile){
+		width: 90%;
+		margin:5%;
+	}
+}
+.list__item--last {
+	border-bottom:none;
+}
+.link-box__header, .contact-us__header {
+	@include breakpoint(mobile){
+		font-size: 24px;
+	}
+}

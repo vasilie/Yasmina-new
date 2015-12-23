@@ -1,0 +1,33 @@
+// ============== 
+// Brand Box
+
+.brand-box {
+	width:100%;
+	padding:4%;
+	text-align:center;
+	padding-bottom: 35px;
+	margin-bottom: 40px;
+	border: 1px solid;
+	@include breakpoint(mobile){
+		display: none;
+	}
+}
+.brand-box--dark {
+	background: $color__primary--megaDarkGray;
+}
+.brand-box__text {
+	margin-top: 20px;
+	margin-bottom: 25px;
+	font-size: 1.5vw;
+}
+.brand-box__item {
+	margin-bottom: 30px;
+	img {
+		width: 100%;
+	}
+}
+.brand-box--mobile {
+	@include breakpoint(mobile){
+		display: block;
+	}
+}

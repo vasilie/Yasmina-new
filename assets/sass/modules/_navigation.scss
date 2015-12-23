@@ -2,7 +2,6 @@
 	width:calc-perc(170px, 1350px);
 	height:100%;
 	float:left;
-	display:none;
 	margin-right: 2.22%;
 	margin-top: 10px;
 	border-right:1px solid $border__color--darkGray;
@@ -12,23 +11,9 @@
 	}
 	@include breakpoint(mobile){
 		display: block;
-	   width: 50px;
-	   height: 50px;
-	   position: relative;
-	   margin:0;
-	   text-align: center;
+		width: 50px;
+		height: 50px;
 		border:1px solid $color__primary--lightgray;
-		img {
-			height: 50%;
-			margin: 0;
-			margin-top: 25%;
-		}
-	}
-}
-.search--desk {
-	display:block;
-	@include breakpoint(mobile){
-		display: none;
 	}
 }
 .nav {
@@ -37,17 +22,6 @@
 	list-style-type: square;
 	text-align: center;
    float: left;
-   @include breakpoint(mobile){
-   	width: 100%;
-   	margin:0;
-   	max-height: 0;
-   	@include transitionFor(all 700ms cubic-bezier(0.455, 0.030, 0.515, 0.955));
-   	overflow: hidden;
-   	&.opened {
-   		height: auto;
-   		max-height: 350px;
-   	}
-   }
 }
 .nav__item {
 	display: inline-block;
@@ -57,8 +31,8 @@
 	background-image: url(../../assets/img/bullet__square--gold.jpg);
 	background-repeat: no-repeat;
 	background-position: left;
-	height: 55px;
-	line-height: 55px;
+	height: 45px;
+	line-height: 45px;
 	@include breakpoint(mobile){
 		width: 49%;
 		text-align: right;
@@ -73,11 +47,10 @@
 	}
 }
 .nav__item--static {
-	display:none;
 	@include breakpoint(mobile){
 		background: $color__primary--lightgray;
-		height:  55px;
-		line-height: 55px;
+		height: 45px;
+		line-height: 45px;
 		text-align:center;
 		border-right:1px solid $color__primary--gray;
 		border-bottom:1px solid $color__primary--gray;
@@ -85,47 +58,50 @@
 		float: left;
 		width: 50%;
 		display: block;
-		font-size: 16px;
-		font-weight: normal;
 	}
 }
 .nav__link{
 	text-decoration: none;
 	color:$text__color--darkGray;
-	@include breakpoint(mobile){
-		font-size: 16px;
-		font-weight: normal;
-	}
 }
 .nav__link:hover {
 	color:$text__color--gold;
 }
-.menu__icon {
-	display: none;
-	float: left;
-	height: 50px;
-	border:1px solid $color__primary--lightgray;
-	width: 50px;
-	background-image: url(../../assets/img/hamburger.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 60%;
-	&.opened{
-		background-image: url(../../assets/img/x-icon.png);
+
+@media screen and (max-width: 1024px) { 
+	.fullWidth__baner img {
+	    width: 200%;
+	    left: 50%;
+	    position: relative;
 	}
-	@include breakpoint(mobile){
+	.search {
 		display: block;
-	}
-}
-.fullWidth__baner img {
-	@include breakpoint(mobile){
-		width: 200%;
-		left: 50%;
-		position: relative;
-	}
-}
-.logo__wrapper {
-	@include breakpoint(mobile){
+		width: 50px;
 		height: 50px;
+		border:1px solid $color__primary--lightgray;
+	}
+	.nav__item {
+		width: 49%;
+		text-align: right;
+		background-image: none;
+		border-right:1px solid $color__primary--lightgray;
+		border-bottom:1px solid $color__primary--lightgray;
+		width: 50%;
+		padding: 0;
+		float: right;
+		padding-right: 16px;
+		font-size: 4vw;
+	}
+	.nav__item--static {
+		background: $color__primary--lightgray;
+		height: 45px;
+		line-height: 45px;
+		text-align:center;
+		border-right:1px solid $color__primary--gray;
+		border-bottom:1px solid $color__primary--gray;
+		font-size: 3.6vw;
+		float: left;
+		width: 50%;
+		display: block;
 	}
 }

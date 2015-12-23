@@ -27,6 +27,9 @@ a {
 
 h2 {
 	font-size: 1.5vw;
+	@include breakpoint(mobile){
+		font-size: 6vw;
+	}
 }
 .link-box {
 	text-align:center;
@@ -43,13 +46,4 @@ h2 {
 }
 .brand-box__category {
 	font-size: 19px;
-}
-/*=============================*\
-	Media queries
-\*=============================*/
-
-@media screen and (max-width: 1024px) { 
-	h2 {
-		font-size: 6vw;
-	}
 }

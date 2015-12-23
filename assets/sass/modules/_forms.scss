@@ -1,3 +1,6 @@
+// =============
+// Comments
+
 .comments {
 	text-align:right;
 	color:$text__color--darkGray;
@@ -8,17 +11,42 @@
 	border-bottom: 1px solid $color__primary--lightgray;
 }
 .comment__heading {
-    font-size: 24px;
-    margin-bottom: 13px;
+		font-size: 24px;
+		margin-bottom: 13px;
+		@include breakpoint(mobile){
+			margin-top: 10px;
+		}
 }
 .comment__author {
 	color:$text__color--gold;
 	font-size: 1.1vw;
     margin-bottom: 20px;
+	&:before {
+		content:" ";
+		width: 20px;
+		height: 20px;
+		background-image:url("cykaBlyat");
+		background-repeat:no-repeat;
+		background-position:center;
+
+	}
+}
+.comment__text, .comment__heading, .comment__author {
+	@include breakpoint(mobile){
+		padding:1% 5%;
+		font-size: 17px !important;
+	}
 }
 .post-comment {
 	.input__wrapper {
 		width: 88%;
+	}
+	@include breakpoint(mobile){
+		width: 100%;
+		padding-left: 11%;
+		.input__wrapper {
+			width: 78%;
+		}
 	}
 }
 .post-comment__button {
@@ -38,6 +66,15 @@
 	padding: 20px;
 	font-size:24px;
 }
+.name:before {
+	content:"1";
+	width:10px;
+	height:7px;
+	@include borderRadius(100px);
+	text-align:center;
+	color:white;
+	background: gray;
+}
 
 // ============== 
 // Contact Us
@@ -53,6 +90,10 @@
 	margin-top: 50px;
 	font-size:1.6vw;
 	color:$text__color--white;
+	@include breakpoint(mobile){
+		font-size: 24px;
+		margin-top: 33px;
+	}
 }
 .contact-us__input-wrapper {
 	width: 51%;
@@ -60,6 +101,9 @@
 	background: #fff;
 	height: 50px;
 	margin-bottom:50px;
+	@include breakpoint(mobile){
+		width:96%;
+	}
 }
 .contact-us__input {
 	width: calc(100% - 200px);
@@ -69,6 +113,10 @@
 	line-height: 50px;
 	float: left;
 	font-size: 20px;
+	@include breakpoint(mobile){
+		font-size: 16px;
+		width: calc(100% - 133px);
+	}
 }
 .contact-us__text {
 	margin-top: 20px;
@@ -79,6 +127,13 @@
 	margin: 20px 25% 35px;
 	line-height:27px;
 	color:$text__color--white;
+	@include breakpoint(mobile){
+		width: 96%;
+		margin-left: 2%;
+		font-size: 18px;
+		margin-right: 2%;
+		line-height: 19px;
+	}
 }
 .input-box {
 	width:100%;
@@ -88,37 +143,4 @@
 .input__wrapper {
 	width:70%;
 	float: left;
-}
-/*=============================*\
-	Media queries
-\*=============================*/
-@media screen and (max-width: 1024px) { 
-	.contact-us__input-wrapper {
-		width:96%;
-	}
-	.contact-us__text {
-		width: 96%;
-		margin-left: 2%;
-		font-size: 18px;
-		margin-right: 2%;
-		line-height: 19px;
-	}
-	.contact-us__header {
-		font-size: 24px;
-		margin-top: 33px;
-	}
-	.contact-us__input {
-		font-size: 16px;
-		width: calc(100% - 133px);
-	}
-	.post-comment {
-		width: 100%;
-		padding-left: 11%;
-		.input__wrapper {
-			width: 78%;
-		}
-	}
-	.comment__heading {
-		margin-top: 10px;
-	}
 }

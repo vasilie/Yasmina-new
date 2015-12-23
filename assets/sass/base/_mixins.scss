@@ -10,3 +10,12 @@
 	-o-transition: $type;
 	transition: $type;
 }
+@mixin line($color:$color__primary--gold, $width:65px, $top:0, $right:0, $float:right){
+	width:$width;
+	height:3px;
+	background: $color;
+	float:$float;
+	position: absolute;
+	top:$top;
+	right:$right;
+}

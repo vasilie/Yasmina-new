@@ -1,4 +1,5 @@
 .carousel {
+	direction:ltr;
 	width:100%;
 	background: $color__primary--megaDarkGray;
 	overflow:hidden;
@@ -9,9 +10,25 @@
 		padding-bottom: 5px;
 		padding-top: 5px;
 	}
+	@include breakpoint(mobile){
+		width: 90%;
+		margin:5%;
+		.section__heading {
+			text-align: center;
+		}
+		.link--left {
+			display: none;
+		}
+	}
 }
 .carousel__wrap {
-	overflow:hidden;
+	@include breakpoint(mobile){
+		overflow: hidden;
+		width: 5000%;
+		float: left;
+		position: relative;
+		left: 0;
+	}
 }
 .carousel__heading {
 	text-align:right;
@@ -19,9 +36,15 @@
 	padding:20px 0;
 }
 .carousel__media {
+	direction:rtl;
 	float:right;
 	width:25%;
 	padding-right: 3%;
+	@include breakpoint(mobile){
+		width: 90vw !important;
+		float: left;
+		padding:0;
+	}
 }
 .carousel__media--first {
 	width:50%;
@@ -46,6 +69,9 @@
 	text-align: center;
 	direction: ltr;
 	display:none;
+	@include breakpoint(mobile){
+		display: block;
+	}
 }
 .carousel__bullet {
 	width: 16px;
@@ -58,15 +84,36 @@
 		background: $color__primary--gold;
 	}
 }
-
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 16px !important;
+    height: 16px !important;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background:$color__primary--darkGray;
+}
+.owl-theme .owl-controls .owl-page.active span {
+    background:$color__primary--gold;
+}
 // ============== 
 // Gallery
 
 .gallery__item {
 	width:50%;
 	float:right;
+	@include breakpoint(mobile){
+		width: 90vw;
+		float: left;
+		margin-right: 5vw;
+		max-height: 100vw;
+	}
 }
 .gallery {
+	direction:ltr;
 	padding-bottom: 20px;
 	overflow: hidden;
 	.media__horizontal {
@@ -85,39 +132,7 @@
 	.media__content {
 		padding-right:16%;
 	}
-}
-
-/*=============================*\
-	Media queries
-\*=============================*/
-
-@media screen and (max-width: 1024px) { 
-	.carousel {
-		width: 90%;
-		margin:5%;
-		.section__heading {
-			text-align: center;
-		}
-		.link--left {
-			display: none;
-		}
-	}
-	.carousel__wrap {
-		overflow: hidden;
-		width: 5000%;
-		float: left;
-		position: relative;
-		left: 0;
-	}
-	.carousel__media {
-		width: 90vw;
-		float: left;
-		padding:0;
-	}
-	.carousel__bullets {
-		display: block;
-	}
-	.gallery {
+	@include breakpoint(mobile){
 		padding:5%;
 		padding-top:0;
 		.media {
@@ -133,11 +148,5 @@
 		.link--left {
 			display: none;
 		}
-	}
-	.gallery__item {
-		width: 90vw;
-		float: left;
-		margin-right: 5vw;
-		max-height: 100vw;
 	}
 }

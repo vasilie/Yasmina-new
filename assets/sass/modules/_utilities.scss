@@ -14,21 +14,20 @@
 	border-bottom:1px solid $border__color--lightGray;
 	padding-bottom: 28px;
 }
-
-/*=============================*\
-	Media queries
-\*=============================*/
-
-@media screen and (max-width: 1024px) {
-	.add-mobile-padding{
+.add-mobile-padding{
+	@include breakpoint(mobile){
 		padding:10%;
-		padding-bottom:5%;
+		padding-bottom:5%;	
 	}
-	.mobile-padding--small {
+}
+.mobile-padding--small {
+	@include breakpoint(mobile){
 		padding:5%;
 		padding-bottom:0;
 	}
-	.no-padding {
+}
+.no-padding {
+	@include breakpoint(mobile){
 		padding:0;
 	}
 }

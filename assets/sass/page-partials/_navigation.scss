@@ -4,6 +4,9 @@
 	list-style-type: square;
 	text-align: center;
    float: left;
+   a {
+   	font-family: $text__family--NashkBold;
+   }
    @include breakpoint(mobile){
    	width: 100%;
    	margin:0;

@@ -83,6 +83,9 @@
 // ============== 
 // Footer Articles & Tags
 .footer-articles {
+	a {
+		font-family: $text__family--NashkRegular;
+	}
 	@include breakpoint(mobile){
 		margin-top:0;
 	}

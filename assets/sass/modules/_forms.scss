@@ -108,7 +108,7 @@
 	}
 }
 .contact-us__input-wrapper {
-	width: 51%;
+	width: 40%;
 	margin: 20px auto;
 	background: #fff;
 	height: 50px;
@@ -124,6 +124,7 @@
 	height: 50px;
 	line-height: 50px;
 	float: left;
+	font-family:$text__family--NashkRegular;
 	font-size: 20px;
 	@include breakpoint(mobile){
 		font-size: 16px;
@@ -134,9 +135,9 @@
 	margin-top: 20px;
 	font-size: 24px;
 	font-family: $text__family--NashkRegular;
-	width: 50%;
-	margin-left: 15%;
-	margin: 20px 25% 35px;
+	width: 40%;
+	margin-left: 20%;
+	margin: 20px 30% 35px;
 	line-height:27px;
 	color:$text__color--white;
 	@include breakpoint(mobile){

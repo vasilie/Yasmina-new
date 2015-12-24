@@ -4,7 +4,6 @@
 @import 'base/breakpoints';
 @import 'base/functions';
 @import 'base/typography';
-@import 'framework/layout';
 @import 'modules/boxes';
 @import 'modules/brand-box';
 @import 'modules/block-mashasheri';
@@ -24,6 +23,7 @@
 @import 'modules/shapes';
 @import 'modules/utilities';
 @import 'page-partials/header';
+@import 'page-partials/layout';
 @import 'page-partials/navigation';
 @import 'page-partials/footer';
 

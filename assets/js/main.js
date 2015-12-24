@@ -4,20 +4,21 @@ $(document).ready(function(){
 		$(".nav").toggleClass("opened");
 		menu_icon.toggleClass("opened");
 	});
-	if (window.outterWidth < 1024) {
-	   $("#carousel__wrap").owlCarousel({
+	if ($(window).outerWidth() < 1024) {
+
+	   $("#video-section__wrap").addClass("owl-carousel").owlCarousel({
 		  	// navigation : true, // Show next and prev buttons
 		  	slideSpeed : 300,
 		  	paginationSpeed : 400,
 		  	singleItem:true
 	   });
-	   $("#gallery").owlCarousel({
+	   $("#gallery").addClass("owl-carousel").owlCarousel({
 		  	// navigation : true, // Show next and prev buttons
 		  	slideSpeed : 300,
 		  	paginationSpeed : 400,
 		  	singleItem:true
 	   });
-	   $("#slider").owlCarousel({
+	   $("#masha-block-slider").addClass("owl-carousel").owlCarousel({
 		  	// navigation : true, // Show next and prev buttons
 		  	slideSpeed : 300,
 		  	paginationSpeed : 400,

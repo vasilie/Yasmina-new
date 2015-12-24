@@ -2,24 +2,6 @@ h1, h2, .media__content p {
 	font-family: $text__family--KufiBold;
 	color: $text__color--darkGray;
 }
-
-h3.brand-box__header, .brand-box__text, .brand-box__category  {
-	font-family: $text__family--Serif;
-	color: $text__color--darkGray;
-	text-align: center;
-}
-.brand-box__text, .link-box__header,.brand-box__category {
-	font-family: $text__family--KufiBold;	
-}
-.brand-box--dark {
-	.brand-box__text, .brand-box__header, .brand-box__category {
-		color: $text__color--white;
-	}
-}
-.link-box__header {
-	color: $text__color--darkGray;
-	font-size:1.3vw;	
-}
 a {
 	text-decoration:none;
 	color:#444;
@@ -31,19 +13,6 @@ h2 {
 		font-size: 6vw;
 	}
 }
-.link-box {
-	text-align:center;
-}
-.gallery, .carousel {
-	font-family: $text__family--KufiBold;
-	color:$text__color--smoke;
-}
 .category {
 	font-family:$text__family--NashkRegular;
-}
-.brand-box__text {
-	font-size:24px;
-}
-.brand-box__category {
-	font-size: 19px;
 }

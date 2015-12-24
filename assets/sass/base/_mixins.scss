@@ -19,3 +19,13 @@
 	top:$top;
 	right:$right;
 }
+%icon {
+	height: 44px;
+	width: 44px;
+	position:absolute;
+	bottom:0;
+	right:0;
+	background-repeat:no-repeat !important;
+	background-position:center !important;
+	background-size:contain !important;
+}

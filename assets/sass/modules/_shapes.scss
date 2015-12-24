@@ -1,7 +1,7 @@
 .line:before {
 	// background: none repeat scroll 0 0 #9e914c;
 	content: "";
-	@include line(cyan);
+	@include line();
 	// height: 3px;
 	// right: 0;
 	// position: absolute;
@@ -26,4 +26,26 @@
 }
 .line--right, .line--center {
 	@extend .line;
+}
+.icon {
+	height: 44px;
+	width: 44px;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	background-repeat:no-repeat !important;
+	background-position:center !important;
+	background-size:contain !important;
+}
+.icon--gallery {
+	@extend .icon;
+	background:url(../../assets/img/gallery-icon.jpg);
+}
+.icon--magnifier {
+	@extend .icon;
+	background: url(../../assets/img/magnifier-icon.jpg);
+}
+.icon--play {
+	@extend .icon;
+	background: url(../../assets/img/play-icon.jpg);
 }

@@ -1,11 +1,9 @@
-// ============== 
-// Link Box
-
 .link-box {
 	width:100%;
 	padding:8%;
 	background: $color__primary--gray;
 	padding-bottom: 40px;
+	text-align:center;
 	.list__item {
 		border-bottom:1px solid $border__color--darkGray;
 		text-align: right;
@@ -27,6 +25,11 @@
 }
 .list__item--last {
 	border-bottom:none;
+}
+.link-box__header {
+	color: $text__color--darkGray;
+	font-family: $text__family--KufiBold;	
+	font-size:1.3vw;	
 }
 .link-box__header, .contact-us__header {
 	@include breakpoint(mobile){

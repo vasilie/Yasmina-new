@@ -8,9 +8,15 @@ html, body {
 	margin:0 auto;
 	overflow: hidden;
 }
+.page-wrapper--full {
+	width:100%;
+	background: $color__primary--megaDarkGray;
+	padding-left: calc((100% - 1350px) /2);
+	padding-right: calc((100% - 1350px) /2);
+}
 .section__wrapper {
 	width:100%;
-	padding:5% calc-perc(130px, 1350px) 0;
+	padding:5% 9.6% 0;
 	overflow:hidden;
 }
 .section--dark {

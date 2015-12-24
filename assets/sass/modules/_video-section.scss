@@ -1,7 +1,9 @@
-.carousel {
+.video-section {
 	direction:ltr;
 	width:100%;
 	background: $color__primary--megaDarkGray;
+	font-family: $text__family--KufiBold;
+	color:$text__color--smoke;
 	overflow:hidden;
 	margin-bottom: 20px;
 	.category {
@@ -21,7 +23,7 @@
 		}
 	}
 }
-.carousel__wrap {
+.video-section__wrap {
 	@include breakpoint(mobile){
 		overflow: hidden;
 		width: 5000%;
@@ -30,12 +32,12 @@
 		left: 0;
 	}
 }
-.carousel__heading {
+.video-section__heading {
 	text-align:right;
 	color:$text__color--white;
 	padding:20px 0;
 }
-.carousel__media {
+.video-section__media {
 	direction:rtl;
 	float:right;
 	width:25%;
@@ -45,25 +47,38 @@
 		float: left;
 		padding:0;
 	}
+	.icon {
+		height: 50px;
+		width: 50px;
+		bottom: 1px;
+		right: 1px;
+	}
 }
-.carousel__media--first {
+.video-section__media--first {
 	width:50%;
 	padding-right:0;
+	.icon {
+		height: 68px;
+		width: 68px;
+		bottom: 0px; 
+		right:0;
+	}
 }
-.carousel__item {
+.video-section__item {
 	float:right;
 	width:100%;
+	position:relative;
 	img {
 		width: 100%;
 		float: right;
 	}
 }
-.carousel__text {
+.video-section__text {
 	color:$text__color--smoke;
 	float:right;
 	margin-bottom: 25px;
 }
-.carousel__bullets{
+.video-section__bullets{
 	float: left;
 	width: 100%;
 	text-align: center;
@@ -73,7 +88,7 @@
 		display: block;
 	}
 }
-.carousel__bullet {
+.video-section__bullet {
 	width: 16px;
 	margin: 6px;
 	height: 16px;
@@ -98,55 +113,4 @@
 }
 .owl-theme .owl-controls .owl-page.active span {
     background:$color__primary--gold;
-}
-// ============== 
-// Gallery
-
-.gallery__item {
-	width:50%;
-	float:right;
-	@include breakpoint(mobile){
-		width: 90vw;
-		float: left;
-		margin-right: 5vw;
-		max-height: 100vw;
-	}
-}
-.gallery {
-	direction:ltr;
-	padding-bottom: 20px;
-	overflow: hidden;
-	.media__horizontal {
-		margin-right: 15%;
-		.media__content {
-			padding-right:3%;
-		}
-	}
-	.media__vertical .line {
-		@extend .line--right;
-	}
-	h2 {
-		color:$text__color--smoke;
-		font-size: 22px;
-	}
-	.media__content {
-		padding-right:16%;
-	}
-	@include breakpoint(mobile){
-		padding:5%;
-		padding-top:0;
-		.media {
-			margin:0;
-			width: 100%;
-		}
-		.media__img {
-			width: 100%;
-		}
-		.media__content {
-			width: 100%;
-		}
-		.link--left {
-			display: none;
-		}
-	}
 }

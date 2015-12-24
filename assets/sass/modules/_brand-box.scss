@@ -1,6 +1,3 @@
-// ============== 
-// Brand Box
-
 .brand-box {
 	width:100%;
 	padding:4%;
@@ -14,11 +11,24 @@
 }
 .brand-box--dark {
 	background: $color__primary--megaDarkGray;
+	.brand-box__text, .brand-box__header, .brand-box__category {
+		color: $text__color--white;
+	}
 }
 .brand-box__text {
 	margin-top: 20px;
 	margin-bottom: 25px;
-	font-size: 1.5vw;
+	font-size:24px;
+	font-family: $text__family--KufiBold;
+}
+.brand-box__category {
+	font-family: $text__family--KufiBold;	
+	font-size: 19px;
+}
+h3.brand-box__header, .brand-box__text, .brand-box__category  {
+	font-family: $text__family--Serif;
+	color: $text__color--darkGray;
+	text-align: center;
 }
 .brand-box__item {
 	margin-bottom: 30px;
@@ -27,6 +37,7 @@
 	}
 }
 .brand-box--mobile {
+	display:none;
 	@include breakpoint(mobile){
 		display: block;
 	}

@@ -24,6 +24,7 @@
 	color:$text__color--darkGray;
 	font-family:$text__family--NashkRegular;
 	width:100%;
+	line-height: 25px;
 	@include breakpoint(mobile){
 		padding: 5%;
 	   font-size: 18px;

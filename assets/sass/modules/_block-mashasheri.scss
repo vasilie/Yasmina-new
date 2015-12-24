@@ -61,7 +61,18 @@
 		right: 20px;
 	}
 	@include breakpoint(mobile){
-		display: none;
+		width:100%;
+		.media__img, .media__content {
+			float: right;
+			width: 100%;
+		}
+		.media__content {
+			padding-right: 25%;
+		}
+		.line:before {
+			top:15px;
+			right: -88px;
+		}
 	}
 }
 .block-mashasheri__item--big {

@@ -13,6 +13,7 @@ html, body {
 	background: $color__primary--megaDarkGray;
 	padding-left: calc((100% - 1350px) /2);
 	padding-right: calc((100% - 1350px) /2);
+	overflow:hidden;
 }
 .section__wrapper {
 	width:100%;

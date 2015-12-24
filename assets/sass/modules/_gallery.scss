@@ -19,6 +19,13 @@
 		margin-right: 15%;
 		.media__content {
 			padding-right:3%;
+			@include breakpoint(mobile){
+				padding-right:16%;
+				.line:before {
+					top: 23px;
+					right: -82px;;
+				}
+			}
 		}
 	}
 	.media__vertical .line {
@@ -48,4 +55,7 @@
 			display: none;
 		}
 	}
+}
+.gallery__wrap {
+	overflow:hidden;
 }

@@ -35,4 +35,15 @@
 	img {
 		width: 100%;
 	}
+	@include breakpoint(mobile){
+		width: 100%;
+		padding: 15%;
+		background: black;
+	}
+}
+.add--padding {
+	padding-top:30px;
+	@include breakpoint(mobile){
+		padding:15%;
+	}
 }
